@@ -76,3 +76,4 @@ C:\Users\abhil\source\repos\NotesApp\NotesApp\bin\Debug\netcoreapp3.1\NLog.confi
 C:\Users\abhil\source\repos\NotesApp\NotesApp\bin\Debug\netcoreapp3.1\NLog.dll
 C:\Users\abhil\source\repos\NotesApp\NotesApp\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
 C:\Users\abhil\source\repos\NotesApp\NotesApp\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\abhil\source\repos\NotesApp\NotesApp\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

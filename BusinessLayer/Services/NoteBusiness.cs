@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interfaces;
+using Microsoft.AspNetCore.Http;
 using ModelLayer.Models;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interfaces;
@@ -48,6 +49,14 @@ namespace BusinessLayer.Services
         public bool DeleteForever(int noteid, int Userid)
         {
             return noteRepo.DeleteForever(noteid, Userid);
+        }
+        public string UploadImage(int noteid, int Userid, IFormFile img)
+        {
+            return noteRepo.UploadImage(noteid, Userid, img);
+        }
+        public NoteEntity UpdateRemainder(int noteid, DateTime updateRemainder, int userid)
+        {
+            return noteRepo.UpdateRemainder(noteid, updateRemainder, userid);
         }
     }
 }

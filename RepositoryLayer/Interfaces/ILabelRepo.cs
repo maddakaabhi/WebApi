@@ -8,5 +8,9 @@ namespace RepositoryLayer.Interfaces
     {
         LabelEntity AddLabel(LabelModel labelModel, int Userid);
         List<LabelEntity> GetLabels(int Userid);
+
+        LabelEntity UpdateLabel(LabelModel labelModel,int Labelid, int Userid);
+  
+        bool DeleteLabel(int Labelid, int noteid, int userId);
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Models;
 using RepositoryLayer.Entity;
+using System;
 using System.Collections.Generic;
 
 namespace NotesApp.Controllers
@@ -151,5 +152,41 @@ namespace NotesApp.Controllers
                 return BadRequest(new ResponseModel<bool> { Success = false, Message = "Note is not found", Data = result });
             }
         }
+
+        [HttpPost]
+        [Route("uploadimage")]
+        public ActionResult uploadimage(int noteid,IFormFile img)
+        {
+            int Userid=int.Parse(User.FindFirst("Userid").Value);
+            var result=noteBusiness.UploadImage(noteid,Userid,img);
+            if( result != null )
+            {
+                return Ok(new ResponseModel<string> { Success = true,Message="Image Uploaded",Data = result});
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<string> { Success = true, Message = "Image not Uploaded", Data = result });
+            }
+        }
+
+        [HttpPost]
+        [Route("updateremainder")]
+
+        public ActionResult updateremainder(int noteid,DateTime updateremainder)
+        {
+            int Userid = int.Parse(User.FindFirst("Userid").Value);
+            var result=noteBusiness.UpdateRemainder(noteid,updateremainder,Userid);
+            if( result != null )
+            {
+                return Ok(new ResponseModel<NoteEntity> { Success = true,Message="Remainder is updated",Data=result});
+
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<NoteEntity> { Success = false, Message = "Remainder not found" }); 
+            }
+        }
+
+        
     }
 }

@@ -1,6 +1,8 @@
-﻿using ModelLayer.Models;
+﻿using Microsoft.AspNetCore.Http;
+using ModelLayer.Models;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Services;
+using System;
 using System.Collections.Generic;
 
 namespace BusinessLayer.Interfaces
@@ -22,6 +24,10 @@ namespace BusinessLayer.Interfaces
         bool IsColor(int noteid, int Userid, string UpdateColor);
 
         bool DeleteForever(int noteid, int Userid);
+
+        string UploadImage(int noteid, int Userid, IFormFile img);
+
+        NoteEntity UpdateRemainder(int noteid, DateTime updateRemainder, int userid);
 
 
 

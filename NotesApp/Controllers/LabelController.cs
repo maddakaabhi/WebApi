@@ -25,7 +25,7 @@ namespace NotesApp.Controllers
         public ActionResult addlabel(LabelModel labelModel)
         {
             int Userid = int.Parse(User.FindFirst("Userid").Value);
-            var result=labelBusiness.AddLabel(labelModel, Userid);
+            var result = labelBusiness.AddLabel(labelModel, Userid);
             if (result != null)
             {
                 return Ok(new ResponseModel<LabelEntity> { Success = true, Message = "Label added successfully", Data = result });
@@ -54,5 +54,42 @@ namespace NotesApp.Controllers
 
 
         }
+        [HttpPost]
+        [Route("updatelabel")]
+
+        public ActionResult updatelabel(LabelModel labelModel, int LabelId)
+        {
+            int Userid = int.Parse(User.FindFirst("Userid").Value);
+            var result = labelBusiness.UpdateLabel(labelModel, LabelId, Userid);
+            if (result != null)
+            {
+                return Ok(new ResponseModel<LabelEntity> { Success = true, Message = "Labename updated successfully", Data = result });
+            }
+            else
+            {
+                return Ok(new ResponseModel<LabelEntity> { Success = false, Message = "Labelname not updated" });
+            }
+        }
+
+        [HttpPost]
+        [Route("deletelabel")]
+
+        public ActionResult deletelabel(int LabelId,int noteid)
+        {
+            int Userid=int.Parse(User.FindFirst("Userid").Value);
+            var result= labelBusiness.DeleteLabel(LabelId, noteid, Userid);
+
+            if (result)
+            {
+                return Ok(new ResponseModel<bool> { Success = true, Message = "Label is deleted", Data = result });
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<bool> { Success = true, Message = "Label not found" }); 
+            }
+        }
+
+        
     }
 }
+

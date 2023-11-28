@@ -24,5 +24,14 @@ namespace BusinessLayer.Services
         {
             return labelRepo.GetLabels(Userid);
         }
+        public LabelEntity UpdateLabel(LabelModel labelModel, int Labelid, int Userid)
+        {
+            return labelRepo.UpdateLabel(labelModel, Labelid, Userid);
+        }
+
+        public bool DeleteLabel(int Labelid, int noteid, int userId)
+        {
+            return labelRepo.DeleteLabel(Labelid, noteid, userId);
+        }
     }
 }

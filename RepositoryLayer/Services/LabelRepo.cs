@@ -42,6 +42,37 @@ namespace RepositoryLayer.Services
             }
 
         }
+
+        public LabelEntity UpdateLabel(LabelModel labelModel,int Labelid, int Userid)
+        {
+            var result = notesDBContext.LabelsT.ToList().Find(x=>x.UserId==Userid&&x.Id==labelModel.Id&&x.LabelId==Labelid);
+            if(result != null)
+            {
+                result.LabelName = labelModel.LabelName;
+                result.UpdatedAt = DateTime.Now;
+                notesDBContext.SaveChanges();
+                return result;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public bool DeleteLabel(int Labelid,int noteid,int userId) 
+        {
+            var result = notesDBContext.LabelsT.ToList().Find(x => x.LabelId == Labelid && x.Id == noteid && x.UserId == userId);
+            if (result != null)
+            {
+                notesDBContext.LabelsT.Remove(result);
+                notesDBContext.SaveChanges();
+                return true; 
+            }
+            else
+            {
+                return false;
+            }
+        }
        
     }
 }
