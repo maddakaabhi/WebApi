@@ -1,0 +1,9 @@
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\bin\Debug\netcoreapp3.1\ModelLayer.deps.json
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\bin\Debug\netcoreapp3.1\ModelLayer.dll
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\bin\Debug\netcoreapp3.1\ModelLayer.pdb
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.AssemblyInfoInputs.cache
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.AssemblyInfo.cs
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.dll
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.pdb
