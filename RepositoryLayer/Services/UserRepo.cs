@@ -161,6 +161,17 @@ namespace RepositoryLayer.Services
             return false;
         }
 
+        public UserEntity LoginSession(LoginModel loginModel)
+        {
+            UserEntity userEntity = notesdbcontext.Users.FirstOrDefault(x=>x.Email==loginModel.LoginEmail && x.Password==EncodePassword(loginModel.LoginPassword));
+            
+            if(userEntity != null)
+            {
+                return userEntity;
+            }
+            else { return null; }
+        }
+
         public ProductEntity ProductAdd(ProductAddModel productAddModel)
         {
             

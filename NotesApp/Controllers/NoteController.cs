@@ -20,11 +20,13 @@ namespace NotesApp.Controllers
             this.noteBusiness = noteBusiness;
         }
 
+        [AllowAnonymous]
         [HttpPost]
         [Route("addnotes")]
         public ActionResult AddNotes(NotesModel notesModel)
         {
-            int UserId =int.Parse( User.FindFirst("Userid").Value);
+            //int UserId =int.Parse( User.FindFirst("Userid").Value);
+            int UserId =(int)HttpContext.Session.GetInt32("UserId");
             var result = noteBusiness.AddNotes(notesModel, UserId);
             if(result != null)
             {
@@ -145,11 +147,11 @@ namespace NotesApp.Controllers
             var result = noteBusiness.DeleteForever(noteid,Userid);
             if (result)
             {
-                return Ok(new ResponseModel<bool> { Success = true, Message = "Note is deleted successfully ", Data = result });
+                return Ok(new ResponseModel<bool> { Success = true, Message = "Note deleted successfully ", Data = result });
             }
             else
             {
-                return BadRequest(new ResponseModel<bool> { Success = false, Message = "Note is not found", Data = result });
+                return BadRequest(new ResponseModel<bool> { Success = false, Message = "Note not found", Data = result });
             }
         }
 

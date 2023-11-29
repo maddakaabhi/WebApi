@@ -52,5 +52,9 @@ namespace BusinessLayer.Services
             return repo.ProductAdd(productaddmodel);
         }
         
+        public UserEntity LoginSession(LoginModel loginModel)
+        {
+            return repo.LoginSession(loginModel);
+        }
     }
 }

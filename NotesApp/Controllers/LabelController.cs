@@ -32,7 +32,7 @@ namespace NotesApp.Controllers
             }
             else
             {
-                return BadRequest(new ResponseModel<LabelEntity> { Success = false, Message = "Label not added" });
+                return BadRequest(new ResponseModel<LabelEntity> { Success = false, Message = "Label already exists" });
             }
 
         }

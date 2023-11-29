@@ -44,6 +44,16 @@ namespace NotesApp
             services.AddTransient<INoteRepo, NoteRepo>();
             services.AddTransient<ILabelBusiness, LabelBusiness>();
             services.AddTransient<ILabelRepo,LabelRepo>();
+            services.AddTransient<ICollaboratorBusiness, CollaboratorBusiness>();
+            services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
+            services.AddSession(x =>
+            {
+                x.IdleTimeout = TimeSpan.FromMinutes(60);
+                x.Cookie.HttpOnly = true;
+                x.Cookie.IsEssential = true;
+            });
+            services.AddDistributedMemoryCache();
+
 
             services.AddSwaggerGen(option =>
             {
@@ -119,6 +129,7 @@ namespace NotesApp
                 app.UseDeveloperExceptionPage();
             }
             app.UseAuthentication();
+            app.UseSession();
 
             app.UseSwagger();
 

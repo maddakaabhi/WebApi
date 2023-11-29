@@ -19,6 +19,8 @@ namespace BusinessLayer.Interfaces
 
         bool DeleteUser(string email);
 
+        UserEntity LoginSession(LoginModel loginModel);
+
         ProductEntity ProductAdd(ProductAddModel productaddmodel);
     }
 }

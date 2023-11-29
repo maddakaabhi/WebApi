@@ -18,15 +18,23 @@ namespace RepositoryLayer.Services
         }
         public LabelEntity AddLabel(LabelModel labelModel, int Userid)
         {
-            LabelEntity label = new LabelEntity();
-            label.Id = labelModel.Id;
-            label.LabelName = labelModel.LabelName;
-            label.UserId = Userid;
-            label.UpdatedAt = DateTime.Now;
-            label.CreatedAt = DateTime.Now;
-            notesDBContext.LabelsT.Add(label);
-            notesDBContext.SaveChanges();
-            return label;
+            var result= notesDBContext.LabelsT.ToList().Find(x=>x.LabelName == labelModel.LabelName);
+            if (result == null)
+            {
+                LabelEntity label = new LabelEntity();
+                label.Id = labelModel.Id;
+                label.LabelName = labelModel.LabelName;
+                label.UserId = Userid;
+                label.UpdatedAt = DateTime.Now;
+                label.CreatedAt = DateTime.Now;
+                notesDBContext.LabelsT.Add(label);
+                notesDBContext.SaveChanges();
+                return label;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public List<LabelEntity> GetLabels(int Userid)

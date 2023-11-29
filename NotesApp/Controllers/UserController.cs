@@ -169,6 +169,28 @@ namespace NotesApp.Controllers
         }
 
         [HttpPost]
+        [Route("loginsession")]
+        public ActionResult LoginSession(LoginModel loginModel)
+        {
+            var result=business.LoginSession(loginModel);
+            if(result != null)
+            {
+                HttpContext.Session.SetInt32("UserId",result.UserId);
+                return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Login Successfully", Data = result });
+            }
+            else
+            {
+                return Ok(new ResponseModel<UserEntity> { Success = false, Message = "Login Failed" });
+            }
+        }
+
+
+
+
+
+
+
+        [HttpPost]
         [Route("addproduct")]
         public ActionResult ProductAdd(ProductAddModel productaddmodel)
         {
