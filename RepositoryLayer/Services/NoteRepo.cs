@@ -40,7 +40,7 @@ namespace RepositoryLayer.Services
 
         public List<NoteEntity> GetAllNotes(int Userid)
         {
-            List<NoteEntity> list = notesDBContext.Notebook.ToList().FindAll(x=>x.UserId==Userid);
+            List<NoteEntity> list = notesDBContext.Notebook.Where(x=>x.UserId==Userid).ToList();
             if(list != null)
             {
                 return list;
@@ -193,6 +193,29 @@ namespace RepositoryLayer.Services
             }
             else { return null; }
 
+        }
+        //problem1
+        public NoteEntity getNote(int Userid,int noteid)
+        {
+            var result=notesDBContext.Notebook.FirstOrDefault(x=>x.UserId == Userid && x.Id==noteid);
+            if (result != null)
+            {
+                return result;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public NoteEntity GetNotebydate(DateTime createdat)
+        {
+            var result=notesDBContext.Notebook.FirstOrDefault(x=>x.CreatedAt==createdat);
+            if(result != null)
+            {
+                return result;
+            }
+            return null;
         }
 
 

@@ -7,7 +7,7 @@ namespace BusinessLayer.Interfaces
     public interface ILabelBusiness
     {
         LabelEntity AddLabel(LabelModel labelModel, int Userid);
-        List<LabelEntity> GetLabels(int Userid);
+        List<LabelEntity> GetLabels(int Userid, int noteid);
 
         LabelEntity UpdateLabel(LabelModel labelModel, int Labelid, int Userid);
 

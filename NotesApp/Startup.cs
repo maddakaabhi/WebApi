@@ -46,6 +46,8 @@ namespace NotesApp
             services.AddTransient<ILabelRepo,LabelRepo>();
             services.AddTransient<ICollaboratorBusiness, CollaboratorBusiness>();
             services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
+            services.AddStackExchangeRedisCache(options => { options.Configuration = Configuration["RedisCacheUrl"]; });
+
             services.AddSession(x =>
             {
                 x.IdleTimeout = TimeSpan.FromMinutes(60);

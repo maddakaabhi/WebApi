@@ -21,6 +21,8 @@ namespace RepositoryLayer.Interfaces
         UserEntity LoginSession(LoginModel loginModel);
 
         ProductEntity ProductAdd(ProductAddModel productmodel);
+
+        UserEntity Updatefirstname(string firstname, string email);
     }
 
 }

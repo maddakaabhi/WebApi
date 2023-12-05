@@ -56,5 +56,10 @@ namespace BusinessLayer.Services
         {
             return repo.LoginSession(loginModel);
         }
+
+        public UserEntity Updatefirstname(string firstname, string email)
+        {
+            return repo.Updatefirstname(firstname, email);
+        }
     }
 }

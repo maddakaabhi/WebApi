@@ -39,10 +39,10 @@ namespace NotesApp.Controllers
 
         [HttpGet]
         [Route("getalllabels")]
-        public List<LabelEntity> GetLabels()
+        public List<LabelEntity> GetLabels(int noteid)
         {
             int Userid = int.Parse(User.FindFirst("Userid").Value);
-            var result = labelBusiness.GetLabels(Userid);
+            var result = labelBusiness.GetLabels(Userid, noteid );
             if (result != null)
             {
                 return result;

@@ -26,5 +26,8 @@ namespace RepositoryLayer.Interfaces
 
         string UploadImage(int noteid, int Userid, IFormFile img);
         NoteEntity UpdateRemainder(int noteid, DateTime updateRemainder, int userid);
+
+        NoteEntity getNote(int Userid,int noteid);
+        NoteEntity GetNotebydate(DateTime createdat);
     }
 }

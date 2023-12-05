@@ -1,9 +1,11 @@
 ﻿using BusinessLayer.Interfaces;
 using BusinessLayer.Services;
+using GreenPipes.Caching;
 using MassTransit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using ModelLayer.Models;
@@ -12,6 +14,8 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Sockets;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace NotesApp.Controllers
@@ -23,6 +27,7 @@ namespace NotesApp.Controllers
         private readonly ILogger<UserController> logger;
         private readonly IUserBusiness business;
         private readonly IBus bus;
+        private readonly IDistributedCache _cache;
         public UserController(IUserBusiness business, IBus bus,ILogger<UserController> logger)
         {
             this.business = business;
@@ -71,18 +76,58 @@ namespace NotesApp.Controllers
         [HttpGet]
         [Route("getallusers")]
         
-        public List<UserEntity> GetUsers()
+        //public List<UserEntity> GetUsers()
+        //{
+        //    var Allusers=business.GetAllUsers();
+        //    if (Allusers != null)
+        //    {
+        //        return Allusers;
+        //    }
+        //    else
+        //    {
+        //        return null;
+        //    }
+        //}
+        [HttpGet]
+        [Route("GetAll")]
+        public async Task<List<UserEntity>> GetAll(string UserId,bool enableCache)
         {
-            var Allusers=business.GetAllUsers();
-            if (Allusers != null)
+            if (!enableCache)
             {
-                return Allusers;
+                return business.GetAllUsers();
+            }
+            string cacheKey = UserId;
+
+            // Trying to get data from the Redis cache
+            byte[] cachedData = await _cache.GetAsync(cacheKey);
+            List<UserEntity> users = new List<UserEntity>();
+            if (cachedData != null)
+            {
+                // If the data is found in the cache, encode and deserialize cached data.
+                var cachedDataString = Encoding.UTF8.GetString(cachedData);
+                users = JsonSerializer.Deserialize<List<UserEntity>>(cachedDataString);
             }
             else
             {
-                return null;
+                // If the data is not found in the cache, then fetch data from database
+                users = business.GetAllUsers();
+
+                // Serializing the data
+                string cachedDataString = JsonSerializer.Serialize(users);
+                var dataToCache = Encoding.UTF8.GetBytes(cachedDataString);
+
+                // Setting up the cache options
+                DistributedCacheEntryOptions options = new DistributedCacheEntryOptions()
+                    .SetAbsoluteExpiration(DateTime.Now.AddMinutes(5))
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(3));
+
+                // Add the data into the cache
+                await _cache.SetAsync(cacheKey, dataToCache, options);
             }
+            return users;
         }
+
+
 
         [HttpGet]
         [Route("checkemailid")]
@@ -183,6 +228,27 @@ namespace NotesApp.Controllers
                 return Ok(new ResponseModel<UserEntity> { Success = false, Message = "Login Failed" });
             }
         }
+
+        [Authorize]
+        [HttpPut]
+        [Route("updatefirstname")]
+
+        public ActionResult Updatename(string firstname)
+        {
+            string email = User.FindFirst("Email").Value;
+            var result=business.Updatefirstname(firstname,email);
+
+            if (result !=null)
+            {
+                return Ok(new ResponseModel<UserEntity> { Success = true, Message = "updated firstname",Data=result });
+            }
+            else
+            {
+                ;
+                return BadRequest(new ResponseModel<UserEntity> { Success = false, Message = "Data not found"});
+            }
+        }
+
 
 
 

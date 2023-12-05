@@ -14,3 +14,4 @@ C:\Users\abhil\source\repos\NotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\Rep
 C:\Users\abhil\source\repos\NotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\ModelLayer.dll
 C:\Users\abhil\source\repos\NotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\ModelLayer.pdb
 C:\Users\abhil\source\repos\NotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CopyComplete
+C:\Users\abhil\source\repos\NotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.sourcelink.json

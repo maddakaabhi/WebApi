@@ -7,3 +7,4 @@ C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLay
 C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.csproj.CoreCompileInputs.cache
 C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.dll
 C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.pdb
+C:\Users\abhil\source\repos\NotesApp\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.sourcelink.json

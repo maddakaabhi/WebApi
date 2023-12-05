@@ -13,3 +13,4 @@ C:\Users\abhil\source\repos\NotesApp\BusinessLayer\bin\Debug\netcoreapp3.1\Repos
 C:\Users\abhil\source\repos\NotesApp\BusinessLayer\bin\Debug\netcoreapp3.1\ModelLayer.pdb
 C:\Users\abhil\source\repos\NotesApp\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
 C:\Users\abhil\source\repos\NotesApp\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CopyComplete
+C:\Users\abhil\source\repos\NotesApp\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.sourcelink.json

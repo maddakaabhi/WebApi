@@ -25,8 +25,8 @@ namespace NotesApp.Controllers
         [Route("addnotes")]
         public ActionResult AddNotes(NotesModel notesModel)
         {
-            //int UserId =int.Parse( User.FindFirst("Userid").Value);
-            int UserId =(int)HttpContext.Session.GetInt32("UserId");
+            int UserId = int.Parse(User.FindFirst("Userid").Value);
+            //int UserId =(int)HttpContext.Session.GetInt32("UserId");
             var result = noteBusiness.AddNotes(notesModel, UserId);
             if(result != null)
             {
@@ -189,6 +189,44 @@ namespace NotesApp.Controllers
             }
         }
 
-        
+        [HttpGet]
+        [Route("getnote")]
+        public ActionResult getnote(int noteid)
+        {
+            int Userid = int.Parse(User.FindFirst("Userid").Value);
+            var result = noteBusiness.getNote(Userid,noteid);
+            if (result != null)
+            {
+                return Ok(new ResponseModel<NoteEntity> { Success = true, Message = "Details of Note", Data = result });
+
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<NoteEntity> { Success = false, Message = "Note not found" });
+            }
+
+
+        }
+
+        [HttpGet]
+        [Route("getnotebydate")]
+        public ActionResult getnotebydate(DateTime date)
+        {
+            
+            var result = noteBusiness.GetNotebydate(date);
+            if (result != null)
+            {
+                return Ok(new ResponseModel<NoteEntity> { Success = true, Message = "Details of Note", Data = result });
+
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<NoteEntity> { Success = false, Message = "Note not found" });
+            }
+
+
+        }
+
+
     }
 }

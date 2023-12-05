@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using RepositoryLayer.Interfaces;
 using System.Linq;
+using System.Data.SqlClient;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -103,7 +104,7 @@ namespace RepositoryLayer.Services
 
 
         }
-        public bool checkemail(string email) 
+        public bool checkemail(string email)
         {
             UserEntity entity = notesdbcontext.Users.ToList().Find(x=>x.Email==email);
             if (entity != null)
@@ -184,6 +185,20 @@ namespace RepositoryLayer.Services
 
         }
         
+        public UserEntity Updatefirstname(string firstname,string email)
+        {
+            var result=notesdbcontext.Users.FirstOrDefault(u => u.Email == email);
+            if(result != null)
+            {
+                result.FirstName = firstname;
+                notesdbcontext.SaveChanges();
+                return result;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
     }
 }

@@ -58,5 +58,15 @@ namespace BusinessLayer.Services
         {
             return noteRepo.UpdateRemainder(noteid, updateRemainder, userid);
         }
+
+        public NoteEntity getNote(int Userid,int noteid)
+        {
+            return noteRepo.getNote(Userid,noteid);
+        }
+
+        public NoteEntity GetNotebydate(DateTime createdat)
+        {
+            return noteRepo.GetNotebydate(createdat);
+        }
     }
 }

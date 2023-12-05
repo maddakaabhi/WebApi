@@ -1,0 +1,1283 @@
+2023-11-30 10:41:27.0101 DEBUG Hosting starting
+2023-11-30 10:41:27.1163 INFO User profile is available. Using 'C:\Users\abhil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-30 10:41:27.6745 DEBUG Reading data from file 'C:\Users\abhil\AppData\Local\ASP.NET\DataProtection-Keys\key-2e7fde86-e17f-4a4e-97be-24291eb6593d.xml'.
+2023-11-30 10:41:27.7095 DEBUG Found key {2e7fde86-e17f-4a4e-97be-24291eb6593d}.
+2023-11-30 10:41:27.7270 DEBUG Considering key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with expiration date 2024-02-21 10:14:54Z as default key.
+2023-11-30 10:41:27.7811 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 10:41:27.7899 DEBUG Decrypting secret element using Windows DPAPI.
+2023-11-30 10:41:27.7899 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 10:41:27.7899 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-11-30 10:41:27.7899 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-11-30 10:41:27.7899 DEBUG Using key {2e7fde86-e17f-4a4e-97be-24291eb6593d} as the default key.
+2023-11-30 10:41:27.7899 DEBUG Key ring with default key {2e7fde86-e17f-4a4e-97be-24291eb6593d} was loaded during application startup.
+2023-11-30 10:41:27.8070 DEBUG Starting host: rabbitmq://localhost/
+2023-11-30 10:41:27.8677 DEBUG Connect: guest@localhost:5672/
+2023-11-30 10:41:28.2279 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 54466)
+2023-11-30 10:41:28.8430 DEBUG Loaded hosting startup assembly NotesApp
+2023-11-30 10:41:28.8430 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-30 10:41:28.8430 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-30 10:41:28.8430 INFO Application started. Press Ctrl+C to shut down.
+2023-11-30 10:41:28.8430 INFO Hosting environment: Development
+2023-11-30 10:41:28.8430 INFO Content root path: C:\Users\abhil\source\repos\NotesApp\NotesApp
+2023-11-30 10:41:28.8430 DEBUG Hosting started
+2023-11-30 10:41:28.8890 INFO Request starting HTTP/2.0 GET https://localhost:44310/swagger/index.html  
+2023-11-30 10:41:29.0172 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-11-30 10:41:29.0172 TRACE All hosts are allowed.
+2023-11-30 10:41:29.1113 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 10:41:29.1176 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 10:41:29.1740 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-11-30 10:41:29.2144 DEBUG Response markup was updated to include browser refresh script injection.
+2023-11-30 10:41:29.2144 INFO Request finished in 328.4201ms 200 text/html;charset=utf-8
+2023-11-30 10:41:29.2449 INFO Request starting HTTP/2.0 GET https://localhost:44310/_framework/aspnetcore-browser-refresh.js  
+2023-11-30 10:41:29.2449 INFO Request finished in 5.5158ms 200 application/javascript; charset=utf-8
+2023-11-30 10:41:29.2636 INFO Request starting HTTP/2.0 GET https://localhost:44310/_vs/browserLink  
+2023-11-30 10:41:29.4474 INFO Request finished in 183.8166ms 200 text/javascript; charset=UTF-8
+2023-11-30 10:41:29.5278 INFO Request starting HTTP/2.0 GET https://localhost:44310/swagger/v1/swagger.json  
+2023-11-30 10:41:29.5278 TRACE All hosts are allowed.
+2023-11-30 10:41:29.5278 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 10:41:29.5278 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 10:41:29.6840 INFO Request finished in 156.1275ms 200 application/json;charset=utf-8
+2023-11-30 10:41:41.7129 INFO Request starting HTTP/2.0 GET https://localhost:44310/api/User/getallusers  
+2023-11-30 10:41:41.7129 TRACE All hosts are allowed.
+2023-11-30 10:41:41.7129 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 10:41:41.7129 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 10:41:41.7129 DEBUG The request path  does not match the path filter
+2023-11-30 10:41:41.7466 DEBUG 1 candidate(s) found for the request path '/api/User/getallusers'
+2023-11-30 10:41:41.7466 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetUsers (NotesApp)' with route pattern 'api/User/getallusers' is valid for the request path '/api/User/getallusers'
+2023-11-30 10:41:41.7466 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetUsers (NotesApp)'
+2023-11-30 10:41:41.7466 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetUsers (NotesApp)'
+2023-11-30 10:41:41.7595 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-11-30 10:41:41.7743 INFO Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity] GetUsers() on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 10:41:41.7743 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 10:41:41.7743 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 10:41:41.7743 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 10:41:41.7743 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 10:41:41.7743 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 10:41:41.7743 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 10:41:41.9269 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-11-30 10:41:41.9447 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 10:41:41.9447 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 10:41:41.9447 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 10:41:41.9447 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 10:41:41.9447 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 10:41:41.9447 INFO Executing action method NotesApp.Controllers.UserController.GetUsers (NotesApp) - Validation state: Valid
+2023-11-30 10:41:42.3937 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 10:41:42.5122 DEBUG queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.NotesDBContext, 
+    DiagnosticsLogger<Query>
+)
+2023-11-30 10:41:42.5297 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 10:41:42.6925 DEBUG Created DbCommand for 'ExecuteReader' (159ms).
+2023-11-30 10:41:42.6949 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 10:41:43.2503 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 10:41:43.2503 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 10:41:43.3350 INFO Executed DbCommand (78ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 10:41:43.3706 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 10:41:43.3879 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 10:41:43.3879 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 10:41:43.3879 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 10:41:43.3879 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 10:41:43.3879 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 10:41:43.3879 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 10:41:43.3879 DEBUG A data reader was disposed.
+2023-11-30 10:41:43.3879 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 10:41:43.3879 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 10:41:43.3879 INFO Executed action method NotesApp.Controllers.UserController.GetUsers (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1446.8523ms.
+2023-11-30 10:41:43.3879 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 10:41:43.3879 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 10:41:43.3879 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 10:41:43.3879 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 10:41:43.3879 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 10:41:43.3879 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 10:41:43.3879 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 10:41:43.4002 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 10:41:43.4002 DEBUG Attempting to select an output formatter based on Accept header 'text/plain'.
+2023-11-30 10:41:43.4002 DEBUG Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2023-11-30 10:41:43.4002 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 10:41:43.4002 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 10:41:43.4002 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 10:41:43.4002 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 10:41:43.4139 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 10:41:43.4139 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 10:41:43.4139 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 10:41:43.4139 INFO Executed action NotesApp.Controllers.UserController.GetUsers (NotesApp) in 1639.0888ms
+2023-11-30 10:41:43.4139 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetUsers (NotesApp)'
+2023-11-30 10:41:43.4139 DEBUG 'NotesDBContext' disposed.
+2023-11-30 10:41:43.4139 INFO Request finished in 1708.5483ms 200 application/json; charset=utf-8
+2023-11-30 12:40:54.0857 DEBUG Hosting starting
+2023-11-30 12:40:54.1890 INFO User profile is available. Using 'C:\Users\abhil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-30 12:40:54.6980 DEBUG Reading data from file 'C:\Users\abhil\AppData\Local\ASP.NET\DataProtection-Keys\key-2e7fde86-e17f-4a4e-97be-24291eb6593d.xml'.
+2023-11-30 12:40:54.7179 DEBUG Found key {2e7fde86-e17f-4a4e-97be-24291eb6593d}.
+2023-11-30 12:40:54.7352 DEBUG Considering key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with expiration date 2024-02-21 10:14:54Z as default key.
+2023-11-30 12:40:54.7861 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:40:54.7935 DEBUG Decrypting secret element using Windows DPAPI.
+2023-11-30 12:40:54.7935 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:40:54.7935 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-11-30 12:40:54.7935 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-11-30 12:40:54.7935 DEBUG Using key {2e7fde86-e17f-4a4e-97be-24291eb6593d} as the default key.
+2023-11-30 12:40:54.8042 DEBUG Key ring with default key {2e7fde86-e17f-4a4e-97be-24291eb6593d} was loaded during application startup.
+2023-11-30 12:40:54.8042 DEBUG Starting host: rabbitmq://localhost/
+2023-11-30 12:40:54.8598 DEBUG Connect: guest@localhost:5672/
+2023-11-30 12:40:55.2460 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 60591)
+2023-11-30 12:40:55.3762 DEBUG Loaded hosting startup assembly NotesApp
+2023-11-30 12:40:55.3762 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-30 12:40:55.3762 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-30 12:40:55.3762 INFO Application started. Press Ctrl+C to shut down.
+2023-11-30 12:40:55.3762 INFO Hosting environment: Development
+2023-11-30 12:40:55.3762 INFO Content root path: C:\Users\abhil\source\repos\NotesApp\NotesApp
+2023-11-30 12:40:55.3762 DEBUG Hosting started
+2023-11-30 12:40:55.4142 INFO Request starting HTTP/2.0 GET https://localhost:44310/swagger/index.html  
+2023-11-30 12:40:55.5250 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-11-30 12:40:55.5250 TRACE All hosts are allowed.
+2023-11-30 12:40:55.5885 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:40:55.5885 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:40:55.6592 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-11-30 12:40:55.7772 INFO Request starting HTTP/2.0 GET https://localhost:44310/_framework/aspnetcore-browser-refresh.js  
+2023-11-30 12:40:55.7772 INFO Request starting HTTP/2.0 GET https://localhost:44310/_vs/browserLink  
+2023-11-30 12:40:55.7772 INFO Request finished in 5.8271ms 200 application/javascript; charset=utf-8
+2023-11-30 12:40:57.8850 DEBUG Response markup was updated to include browser refresh script injection.
+2023-11-30 12:40:57.8850 INFO Request finished in 2473.738ms 200 text/html;charset=utf-8
+2023-11-30 12:40:58.2037 INFO Request finished in 2419.3073ms 200 text/javascript; charset=UTF-8
+2023-11-30 12:40:58.3655 INFO Request starting HTTP/2.0 GET https://localhost:44310/swagger/v1/swagger.json  
+2023-11-30 12:40:58.3655 TRACE All hosts are allowed.
+2023-11-30 12:40:58.3655 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:40:58.3667 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:40:58.5298 INFO Request finished in 164.2978ms 200 application/json;charset=utf-8
+2023-11-30 12:41:18.5704 DEBUG Hosting starting
+2023-11-30 12:41:18.7244 INFO User profile is available. Using 'C:\Users\abhil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-30 12:41:19.3475 DEBUG Reading data from file 'C:\Users\abhil\AppData\Local\ASP.NET\DataProtection-Keys\key-2e7fde86-e17f-4a4e-97be-24291eb6593d.xml'.
+2023-11-30 12:41:19.3809 DEBUG Found key {2e7fde86-e17f-4a4e-97be-24291eb6593d}.
+2023-11-30 12:41:19.4068 DEBUG Considering key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with expiration date 2024-02-21 10:14:54Z as default key.
+2023-11-30 12:41:19.5045 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:41:19.5269 DEBUG Decrypting secret element using Windows DPAPI.
+2023-11-30 12:41:19.5269 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:41:19.5269 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-11-30 12:41:19.5424 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-11-30 12:41:19.5424 DEBUG Using key {2e7fde86-e17f-4a4e-97be-24291eb6593d} as the default key.
+2023-11-30 12:41:19.5424 DEBUG Key ring with default key {2e7fde86-e17f-4a4e-97be-24291eb6593d} was loaded during application startup.
+2023-11-30 12:41:19.5646 DEBUG Starting host: rabbitmq://localhost/
+2023-11-30 12:41:19.6791 DEBUG Connect: guest@localhost:5672/
+2023-11-30 12:41:20.1334 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 60630)
+2023-11-30 12:41:20.4206 DEBUG Loaded hosting startup assembly NotesApp
+2023-11-30 12:41:20.4206 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-30 12:41:20.4206 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-30 12:41:20.4206 INFO Application started. Press Ctrl+C to shut down.
+2023-11-30 12:41:20.4206 INFO Hosting environment: Development
+2023-11-30 12:41:20.4206 INFO Content root path: C:\Users\abhil\source\repos\NotesApp\NotesApp
+2023-11-30 12:41:20.4206 DEBUG Hosting started
+2023-11-30 12:41:20.4922 INFO Request starting HTTP/2.0 GET https://localhost:44310/swagger/index.html  
+2023-11-30 12:41:20.6530 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-11-30 12:41:20.6530 TRACE All hosts are allowed.
+2023-11-30 12:41:20.7897 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:41:20.7897 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:41:20.9127 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-11-30 12:41:21.0212 INFO Request starting HTTP/2.0 GET https://localhost:44310/_framework/aspnetcore-browser-refresh.js  
+2023-11-30 12:41:21.0315 INFO Request finished in 9.0469ms 200 application/javascript; charset=utf-8
+2023-11-30 12:41:21.0635 INFO Request starting HTTP/2.0 GET https://localhost:44310/_vs/browserLink  
+2023-11-30 12:41:21.2202 INFO Request finished in 156.6782ms 200 text/javascript; charset=UTF-8
+2023-11-30 12:41:21.5177 DEBUG Response markup was updated to include browser refresh script injection.
+2023-11-30 12:41:21.5177 INFO Request finished in 1030.0896ms 200 text/html;charset=utf-8
+2023-11-30 12:41:21.5855 INFO Request starting HTTP/2.0 GET https://localhost:44310/swagger/v1/swagger.json  
+2023-11-30 12:41:21.5855 TRACE All hosts are allowed.
+2023-11-30 12:41:21.5855 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:41:21.5855 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:41:21.7871 INFO Request finished in 201.5861ms 200 application/json;charset=utf-8
+2023-11-30 12:42:06.7835 INFO Request starting HTTP/2.0 GET https://localhost:44310/api/User/GetAll?UserId=sd&enableCache=false  
+2023-11-30 12:42:06.7835 TRACE All hosts are allowed.
+2023-11-30 12:42:06.7926 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:42:06.7926 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:42:06.7926 DEBUG The request path  does not match the path filter
+2023-11-30 12:42:06.8672 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:42:06.8672 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:42:06.8672 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:42:06.8672 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:42:06.8923 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-11-30 12:42:06.9695 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:42:06.9695 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:42:06.9695 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:42:06.9695 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:42:06.9695 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:42:06.9695 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:42:06.9695 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:42:07.2565 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-11-30 12:42:07.2913 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:42:07.2913 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:42:07.3089 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' using the name 'UserId' in request data ...
+2023-11-30 12:42:07.3089 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:42:07.3089 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:42:07.3089 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:42:07.3089 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:42:07.3089 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:42:07.3089 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' using the name 'enableCache' in request data ...
+2023-11-30 12:42:07.3089 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:42:07.3089 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:42:07.3089 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:42:07.3089 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:42:07.3089 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:42:07.3089 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:42:07.3089 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:42:07.3089 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:42:07.3254 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:42:07.3254 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (sd, False)
+2023-11-30 12:42:08.3917 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:42:08.7186 DEBUG queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.NotesDBContext, 
+    DiagnosticsLogger<Query>
+)
+2023-11-30 12:42:08.7660 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:42:09.0678 DEBUG Created DbCommand for 'ExecuteReader' (295ms).
+2023-11-30 12:42:09.0778 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:42:09.8949 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:42:09.9177 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:42:10.0148 INFO Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:42:10.1043 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:42:10.1420 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:42:10.1420 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:42:10.1420 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:42:10.1420 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:42:10.1420 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:42:10.1420 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:42:10.1506 DEBUG A data reader was disposed.
+2023-11-30 12:42:10.1506 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:42:10.1506 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:42:10.1671 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2835.7507ms.
+2023-11-30 12:42:10.1671 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:42:10.1671 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:42:10.1671 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:42:10.1671 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:42:10.1671 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:42:10.1671 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:42:10.1671 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:42:10.1671 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:42:10.1671 DEBUG Attempting to select an output formatter based on Accept header 'text/plain'.
+2023-11-30 12:42:10.1671 DEBUG Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2023-11-30 12:42:10.1671 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:42:10.1671 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:42:10.1671 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:42:10.1671 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:42:10.1894 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:42:10.1894 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:42:10.1894 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:42:10.1894 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 3217.7584ms
+2023-11-30 12:42:10.1894 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:42:10.2072 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:42:10.2114 INFO Request finished in 3428.6096ms 200 application/json; charset=utf-8
+2023-11-30 12:44:41.7229 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:44:41.7302 TRACE All hosts are allowed.
+2023-11-30 12:44:41.7302 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:44:41.7302 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:44:41.7302 DEBUG The request path  does not match the path filter
+2023-11-30 12:44:41.7462 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:44:41.7462 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:44:41.7462 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:41.7462 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:41.7575 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:44:41.7575 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:44:41.7575 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:44:41.7575 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:44:41.7575 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:44:41.7575 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:44:41.7575 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:44:41.7575 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:44:41.7797 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:44:41.7797 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:41.7797 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:41.7797 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:41.7797 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:44:41.7797 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:41.7797 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:44:41.7797 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:41.7797 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:41.7797 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:41.7797 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:44:41.7797 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:41.7797 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:41.7797 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:41.7797 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:41.7797 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:41.7797 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:44:41.7797 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:44:41.8462 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:44:41.8462 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:44:41.8515 DEBUG Created DbCommand for 'ExecuteReader' (2ms).
+2023-11-30 12:44:41.8515 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:41.8515 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:41.8515 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:44:41.9011 INFO Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:44:41.9011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:41.9011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:41.9011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:41.9011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:41.9011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:41.9011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:41.9011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:41.9011 DEBUG A data reader was disposed.
+2023-11-30 12:44:41.9011 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:41.9011 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:41.9011 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 119.9558ms.
+2023-11-30 12:44:41.9011 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:41.9011 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:41.9011 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:41.9011 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:41.9011 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:41.9011 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:41.9011 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:44:41.9011 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:44:41.9011 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:44:41.9011 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:44:41.9011 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:44:41.9011 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:44:41.9011 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:44:41.9011 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:44:41.9011 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:41.9011 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:41.9011 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 151.4247ms
+2023-11-30 12:44:41.9011 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:41.9400 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:44:41.9400 INFO Request finished in 218.6323ms 200 application/json; charset=utf-8
+2023-11-30 12:44:56.2265 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:44:56.2265 TRACE All hosts are allowed.
+2023-11-30 12:44:56.2265 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:44:56.2265 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:44:56.2265 DEBUG The request path  does not match the path filter
+2023-11-30 12:44:56.2265 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:44:56.2265 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:44:56.2265 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:56.2265 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:56.2265 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:44:56.2265 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:44:56.2265 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:44:56.2265 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:44:56.2265 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:44:56.2265 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:44:56.2265 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:44:56.2421 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:44:56.2421 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:44:56.2421 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:56.2421 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:56.2421 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:56.2421 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:44:56.2421 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:56.2421 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:44:56.2421 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:56.2421 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:56.2421 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:56.2421 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:44:56.2421 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:56.2421 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:56.2421 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:56.2421 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:56.2421 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:56.2421 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:44:56.2421 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:44:56.2591 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:44:56.2591 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:44:56.2591 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:44:56.2591 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:56.2591 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:56.2591 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:44:56.2591 INFO Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:44:56.2591 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:56.2591 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:56.2591 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:56.2591 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:56.2591 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:56.2591 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:56.2591 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:56.2591 DEBUG A data reader was disposed.
+2023-11-30 12:44:56.2591 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:56.2591 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:56.2591 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24.134ms.
+2023-11-30 12:44:56.2591 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:56.2591 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:56.2591 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:56.2591 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:56.2591 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:56.2591 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:56.2591 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:44:56.2591 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:44:56.2591 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:44:56.2591 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:44:56.2591 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:44:56.2591 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:44:56.2591 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:44:56.2591 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:44:56.2591 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:56.2591 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:56.2591 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 36.2875ms
+2023-11-30 12:44:56.2591 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:56.2732 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:44:56.2732 INFO Request finished in 46.9204ms 200 application/json; charset=utf-8
+2023-11-30 12:44:59.0313 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:44:59.0313 TRACE All hosts are allowed.
+2023-11-30 12:44:59.0313 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:44:59.0313 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:44:59.0313 DEBUG The request path  does not match the path filter
+2023-11-30 12:44:59.0313 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:44:59.0313 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:44:59.0313 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:59.0313 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:59.0313 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:44:59.0313 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:44:59.0313 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:44:59.0313 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:44:59.0313 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:44:59.0313 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:44:59.0313 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:44:59.0313 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:44:59.0313 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:44:59.0387 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:59.0387 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:59.0387 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:59.0387 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:44:59.0387 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:44:59.0387 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:44:59.0387 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:59.0387 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:59.0387 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:59.0387 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:44:59.0387 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:44:59.0387 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:59.0387 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:59.0387 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:59.0387 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:59.0387 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:44:59.0387 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:44:59.0387 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:44:59.0387 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:44:59.0387 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:44:59.0387 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:59.0387 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:59.0387 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:44:59.0387 INFO Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:44:59.0387 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:59.0387 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:59.0387 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:59.0387 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:59.0387 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:59.0387 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:59.0387 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:44:59.0387 DEBUG A data reader was disposed.
+2023-11-30 12:44:59.0387 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:59.0387 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:44:59.0387 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 13.5804ms.
+2023-11-30 12:44:59.0387 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:59.0387 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:44:59.0387 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:59.0387 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:44:59.0387 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:59.0387 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:59.0387 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:44:59.0387 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:44:59.0544 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:44:59.0544 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:44:59.0544 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:44:59.0544 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:44:59.0544 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:44:59.0544 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:44:59.0544 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:59.0544 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:44:59.0544 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 20.6972ms
+2023-11-30 12:44:59.0544 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:44:59.0544 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:44:59.0544 INFO Request finished in 35.0452ms 200 application/json; charset=utf-8
+2023-11-30 12:45:00.3866 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:00.3866 TRACE All hosts are allowed.
+2023-11-30 12:45:00.3866 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:00.3866 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:00.3866 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:00.3866 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:00.3866 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:00.3866 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:00.3866 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:00.3866 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:00.3866 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:00.3866 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:00.3866 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:00.3866 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:00.3866 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:00.3866 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:00.3866 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:00.3866 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:00.3866 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:00.3866 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:00.3866 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:00.3866 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:00.3866 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:00.3866 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:00.3866 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:00.3866 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:00.3866 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:00.3866 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:00.3866 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:00.3866 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:00.3866 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:00.3866 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:00.3866 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:00.3866 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:00.3866 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:00.3983 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:00.3983 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:00.3983 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:00.3983 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:00.3983 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:00.3983 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:00.3983 INFO Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:00.3983 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:00.3983 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:00.3983 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:00.3983 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:00.3983 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:00.3983 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:00.3983 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:00.3983 DEBUG A data reader was disposed.
+2023-11-30 12:45:00.3983 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:00.3983 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:00.3983 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.7527ms.
+2023-11-30 12:45:00.3983 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:00.3983 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:00.3983 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:00.3983 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:00.3983 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:00.3983 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:00.3983 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:00.3983 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:00.3983 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:00.3983 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:00.3983 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:00.3983 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:00.3983 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:00.3983 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:00.3983 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:00.3983 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:00.3983 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 13.7183ms
+2023-11-30 12:45:00.3983 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:00.3983 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:00.3983 INFO Request finished in 25.2364ms 200 application/json; charset=utf-8
+2023-11-30 12:45:01.8747 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:01.8747 TRACE All hosts are allowed.
+2023-11-30 12:45:01.8747 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:01.8747 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:01.8747 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:01.8747 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:01.8747 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:01.8747 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:01.8747 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:01.8747 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:01.8747 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:01.8747 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:01.8747 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:01.8747 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:01.8747 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:01.8747 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:01.8747 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:01.8747 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:01.8747 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:01.8747 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:01.8747 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:01.8747 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:01.8747 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:01.8747 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:01.8747 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:01.8747 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:01.8747 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:01.8747 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:01.8747 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:01.8747 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:01.8747 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:01.8747 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:01.8747 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:01.8747 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:01.8747 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:01.8747 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:01.8827 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:01.8827 DEBUG Created DbCommand for 'ExecuteReader' (3ms).
+2023-11-30 12:45:01.8827 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:01.8827 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:01.8827 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:01.8827 INFO Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:01.8827 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:01.8827 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:01.8827 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:01.8827 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:01.8827 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:01.8827 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:01.8827 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:01.8827 DEBUG A data reader was disposed.
+2023-11-30 12:45:01.8827 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:01.8827 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:01.8827 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14.3704ms.
+2023-11-30 12:45:01.8827 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:01.8827 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:01.8827 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:01.8827 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:01.8827 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:01.8827 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:01.8827 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:01.8827 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:01.8827 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:01.8827 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:01.8827 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:01.8827 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:01.8827 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:01.8986 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:01.8986 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:01.8986 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:01.8986 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 21.5429ms
+2023-11-30 12:45:01.8986 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:01.8986 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:01.8986 INFO Request finished in 32.2819ms 200 application/json; charset=utf-8
+2023-11-30 12:45:10.5525 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:10.5525 TRACE All hosts are allowed.
+2023-11-30 12:45:10.5525 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:10.5525 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:10.5525 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:10.5525 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:10.5525 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:10.5525 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:10.5525 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:10.5539 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:10.5539 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:10.5539 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:10.5539 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:10.5539 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:10.5539 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:10.5539 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:10.5539 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:10.5539 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:10.5539 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:10.5539 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:10.5539 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:10.5539 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:10.5539 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:10.5539 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:10.5539 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:10.5539 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:10.5539 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:10.5539 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:10.5539 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:10.5539 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:10.5539 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:10.5539 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:10.5539 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:10.5539 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:10.5539 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:10.5539 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:10.5539 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:10.5539 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:10.5539 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:10.5539 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:10.5539 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:10.5539 INFO Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:10.5539 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:10.5539 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:10.5539 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:10.5539 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:10.5539 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:10.5539 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:10.5539 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:10.5539 DEBUG A data reader was disposed.
+2023-11-30 12:45:10.5539 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:10.5539 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:10.5539 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 11.429ms.
+2023-11-30 12:45:10.5539 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:10.5539 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:10.5694 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:10.5694 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:10.5694 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:10.5694 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:10.5694 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:10.5694 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:10.5694 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:10.5694 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:10.5694 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:10.5694 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:10.5694 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:10.5694 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:10.5694 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:10.5694 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:10.5694 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 18.4141ms
+2023-11-30 12:45:10.5694 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:10.5694 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:10.5694 INFO Request finished in 23.809ms 200 application/json; charset=utf-8
+2023-11-30 12:45:12.3560 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:12.3560 TRACE All hosts are allowed.
+2023-11-30 12:45:12.3560 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:12.3560 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:12.3560 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:12.3560 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:12.3560 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:12.3560 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:12.3560 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:12.3560 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:12.3560 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:12.3560 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:12.3560 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:12.3560 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:12.3560 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:12.3560 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:12.3560 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:12.3560 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:12.3560 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:12.3560 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:12.3560 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:12.3560 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:12.3560 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:12.3560 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:12.3560 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:12.3560 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:12.3560 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:12.3560 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:12.3560 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:12.3560 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:12.3560 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:12.3560 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:12.3560 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:12.3560 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:12.3560 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:12.3560 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:12.3560 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:12.3560 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:12.3560 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:12.3560 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:12.3560 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:12.3671 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:12.3671 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:12.3671 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:12.3671 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:12.3671 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:12.3671 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:12.3671 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:12.3671 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:12.3671 DEBUG A data reader was disposed.
+2023-11-30 12:45:12.3671 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:12.3671 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:12.3671 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.6075ms.
+2023-11-30 12:45:12.3671 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:12.3671 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:12.3671 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:12.3671 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:12.3671 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:12.3671 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:12.3671 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:12.3671 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:12.3671 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:12.3671 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:12.3671 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:12.3671 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:12.3671 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:12.3671 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:12.3671 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:12.3671 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:12.3671 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 7.0073ms
+2023-11-30 12:45:12.3671 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:12.3671 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:12.3671 INFO Request finished in 16.0172ms 200 application/json; charset=utf-8
+2023-11-30 12:45:13.9500 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:13.9500 TRACE All hosts are allowed.
+2023-11-30 12:45:13.9500 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:13.9500 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:13.9500 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:13.9500 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:13.9500 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:13.9500 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:13.9500 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:13.9500 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:13.9500 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:13.9500 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:13.9500 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:13.9500 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:13.9500 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:13.9500 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:13.9500 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:13.9500 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:13.9500 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:13.9500 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:13.9500 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:13.9500 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:13.9500 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:13.9500 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:13.9500 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:13.9500 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:13.9500 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:13.9500 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:13.9500 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:13.9500 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:13.9500 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:13.9500 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:13.9500 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:13.9500 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:13.9500 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:13.9500 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:13.9500 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:13.9500 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:13.9500 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:13.9500 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:13.9500 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:13.9500 INFO Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:13.9611 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:13.9611 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:13.9611 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:13.9611 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:13.9611 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:13.9611 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:13.9611 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:13.9611 DEBUG A data reader was disposed.
+2023-11-30 12:45:13.9611 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:13.9611 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:13.9611 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.3438ms.
+2023-11-30 12:45:13.9611 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:13.9611 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:13.9611 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:13.9611 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:13.9611 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:13.9611 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:13.9611 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:13.9611 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:13.9611 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:13.9611 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:13.9611 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:13.9611 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:13.9611 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:13.9611 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:13.9611 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:13.9611 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:13.9611 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 11.7805ms
+2023-11-30 12:45:13.9611 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:13.9611 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:13.9611 INFO Request finished in 17.7852ms 200 application/json; charset=utf-8
+2023-11-30 12:45:15.0940 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:15.0940 TRACE All hosts are allowed.
+2023-11-30 12:45:15.0940 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:15.0940 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:15.0940 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:15.0940 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:15.0940 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:15.0940 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:15.0940 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:15.0940 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:15.0940 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:15.0940 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:15.0940 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:15.0940 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:15.0940 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:15.0940 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:15.0940 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:15.0940 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:15.1011 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:15.1011 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:15.1011 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:15.1011 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:15.1011 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:15.1011 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:15.1011 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:15.1011 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:15.1011 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:15.1011 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:15.1011 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:15.1011 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:15.1011 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:15.1011 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:15.1011 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:15.1011 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:15.1011 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:15.1011 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:15.1011 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:15.1011 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:15.1011 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:15.1011 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:15.1011 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:15.1011 INFO Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:15.1011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:15.1011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:15.1011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:15.1011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:15.1011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:15.1011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:15.1011 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:15.1011 DEBUG A data reader was disposed.
+2023-11-30 12:45:15.1011 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:15.1011 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:15.1011 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.9888ms.
+2023-11-30 12:45:15.1011 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:15.1011 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:15.1011 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:15.1011 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:15.1011 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:15.1011 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:15.1011 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:15.1011 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:15.1011 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:15.1011 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:15.1011 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:15.1011 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:15.1011 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:15.1011 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:15.1011 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:15.1011 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:15.1011 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 15.3996ms
+2023-11-30 12:45:15.1011 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:15.1178 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:15.1178 INFO Request finished in 24.0506ms 200 application/json; charset=utf-8
+2023-11-30 12:45:16.2387 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:16.2387 TRACE All hosts are allowed.
+2023-11-30 12:45:16.2387 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:16.2387 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:16.2387 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:16.2387 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:16.2387 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:16.2417 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:16.2417 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:16.2417 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:16.2417 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:16.2417 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:16.2417 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:16.2417 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:16.2417 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:16.2417 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:16.2417 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:16.2417 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:16.2417 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:16.2417 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:16.2417 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:16.2417 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:16.2417 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:16.2417 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:16.2417 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:16.2417 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:16.2417 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:16.2417 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:16.2417 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:16.2417 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:16.2417 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:16.2417 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:16.2417 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:16.2417 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:16.2417 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:16.2417 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:16.2417 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:16.2417 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:16.2417 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:16.2417 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:16.2417 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:16.2417 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:16.2417 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:16.2417 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:16.2417 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:16.2417 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:16.2417 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:16.2417 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:16.2417 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:16.2417 DEBUG A data reader was disposed.
+2023-11-30 12:45:16.2417 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:16.2417 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:16.2417 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.9745ms.
+2023-11-30 12:45:16.2417 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:16.2417 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:16.2417 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:16.2417 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:16.2417 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:16.2417 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:16.2417 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:16.2417 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:16.2417 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:16.2417 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:16.2417 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:16.2417 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:16.2417 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:16.2417 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:16.2417 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:16.2417 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:16.2417 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 7.7401ms
+2023-11-30 12:45:16.2417 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:16.2417 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:16.2417 INFO Request finished in 14.2532ms 200 application/json; charset=utf-8
+2023-11-30 12:45:17.3812 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:17.3812 TRACE All hosts are allowed.
+2023-11-30 12:45:17.3823 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:17.3823 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:17.3823 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:17.3823 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:17.3823 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:17.3823 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:17.3823 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:17.3823 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:17.3823 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:17.3823 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:17.3823 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:17.3823 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:17.3823 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:17.3823 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:17.3823 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:17.3823 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:17.3823 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:17.3823 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:17.3823 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:17.3823 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:17.3823 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:17.3823 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:17.3823 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:17.3823 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:17.3823 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:17.3823 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:17.3823 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:17.3823 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:17.3823 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:17.3823 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:17.3823 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:17.3823 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:17.3823 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:17.3823 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:17.3823 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:17.3823 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:17.3823 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:17.3823 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:17.3823 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:17.3823 INFO Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:17.3823 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:17.3823 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:17.3823 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:17.3823 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:17.3823 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:17.3823 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:17.3823 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:17.3823 DEBUG A data reader was disposed.
+2023-11-30 12:45:17.3823 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:17.3823 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:17.3823 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.8991ms.
+2023-11-30 12:45:17.3823 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:17.3823 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:17.3823 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:17.3823 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:17.3823 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:17.3823 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:17.3988 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:17.3988 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:17.3988 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:17.3988 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:17.3988 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:17.3988 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:17.3988 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:17.3988 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:17.3988 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:17.3988 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:17.3988 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 16.4092ms
+2023-11-30 12:45:17.3988 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:17.3988 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:17.3988 INFO Request finished in 23.8986ms 200 application/json; charset=utf-8
+2023-11-30 12:45:18.6135 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:18.6135 TRACE All hosts are allowed.
+2023-11-30 12:45:18.6135 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:18.6135 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:18.6135 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:18.6135 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:18.6135 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:18.6135 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:18.6135 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:18.6135 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:18.6135 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:18.6135 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:18.6135 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:18.6135 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:18.6135 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:18.6167 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:18.6167 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:18.6167 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:18.6167 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:18.6167 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:18.6167 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:18.6167 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:18.6167 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:18.6167 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:18.6167 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:18.6167 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:18.6167 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:18.6167 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:18.6167 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:18.6167 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:18.6167 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:18.6167 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:18.6167 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:18.6167 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:18.6167 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:18.6167 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:18.6167 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:18.6167 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:18.6167 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:18.6167 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:18.6167 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:18.6167 INFO Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:18.6167 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:18.6167 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:18.6167 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:18.6167 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:18.6167 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:18.6167 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:18.6167 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:18.6167 DEBUG A data reader was disposed.
+2023-11-30 12:45:18.6167 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:18.6167 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:18.6167 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.0911ms.
+2023-11-30 12:45:18.6167 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:18.6167 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:18.6167 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:18.6167 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:18.6167 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:18.6167 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:18.6167 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:18.6167 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:18.6167 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:18.6167 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:18.6167 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:18.6167 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:18.6167 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:18.6167 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:18.6167 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:18.6167 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:18.6167 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 12.0983ms
+2023-11-30 12:45:18.6167 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:18.6167 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:18.6167 INFO Request finished in 18.4925ms 200 application/json; charset=utf-8
+2023-11-30 12:45:20.0136 INFO Request starting HTTP/1.1 GET https://localhost:44310/api/User/GetAll  
+2023-11-30 12:45:20.0136 TRACE All hosts are allowed.
+2023-11-30 12:45:20.0136 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:45:20.0136 TRACE Performing protect operation to key {2e7fde86-e17f-4a4e-97be-24291eb6593d} with purposes ('C:\Users\abhil\source\repos\NotesApp\NotesApp', 'SessionMiddleware').
+2023-11-30 12:45:20.0136 DEBUG The request path  does not match the path filter
+2023-11-30 12:45:20.0136 DEBUG 1 candidate(s) found for the request path '/api/User/GetAll'
+2023-11-30 12:45:20.0136 DEBUG Endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)' with route pattern 'api/User/GetAll' is valid for the request path '/api/User/GetAll'
+2023-11-30 12:45:20.0136 DEBUG Request matched endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:20.0136 INFO Executing endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:20.0136 INFO Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.UserEntity]] GetAll(System.String, Boolean) on controller NotesApp.Controllers.UserController (NotesApp).
+2023-11-30 12:45:20.0136 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:45:20.0136 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:45:20.0136 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:45:20.0136 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:45:20.0136 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:45:20.0136 DEBUG Executing controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:20.0136 DEBUG Executed controller factory for controller NotesApp.Controllers.UserController (NotesApp)
+2023-11-30 12:45:20.0136 DEBUG Attempting to bind parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:20.0136 DEBUG Could not find a value in the request with name '' for binding parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:20.0136 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:20.0136 DEBUG Done attempting to bind parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:20.0136 DEBUG Attempting to validate the bound parameter 'UserId' of type 'System.String' ...
+2023-11-30 12:45:20.0136 DEBUG Done attempting to validate the bound parameter 'UserId' of type 'System.String'.
+2023-11-30 12:45:20.0136 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:20.0136 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:20.0136 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:20.0136 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:20.0136 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:45:20.0136 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:45:20.0136 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:20.0136 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:20.0136 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:20.0136 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:20.0136 INFO Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) - Validation state: Valid
+2023-11-30 12:45:20.0136 TRACE Executing action method NotesApp.Controllers.UserController.GetAll (NotesApp) with arguments (, False)
+2023-11-30 12:45:20.0136 INFO Entity Framework Core 3.1.0 initialized 'NotesDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:45:20.0136 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:45:20.0136 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:45:20.0136 DEBUG Opening connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:20.0136 DEBUG Opened connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:20.0136 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:20.0237 INFO Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedAt]
+FROM [Users] AS [u]
+2023-11-30 12:45:20.0237 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:20.0237 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:20.0237 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:20.0237 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:20.0237 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:20.0237 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:20.0237 DEBUG Context 'NotesDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:45:20.0237 DEBUG A data reader was disposed.
+2023-11-30 12:45:20.0237 DEBUG Closing connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:20.0237 DEBUG Closed connection to database 'NoteAppDB' on server 'LAPTOP-JDE1S40N\SQLEXPRESS'.
+2023-11-30 12:45:20.0237 INFO Executed action method NotesApp.Controllers.UserController.GetAll (NotesApp), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.81ms.
+2023-11-30 12:45:20.0237 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:20.0237 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:45:20.0237 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:20.0237 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:45:20.0237 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:20.0237 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:20.0237 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:20.0237 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:45:20.0237 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:45:20.0237 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:45:20.0237 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:45:20.0237 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:45:20.0237 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:45:20.0237 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:45:20.0237 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:20.0237 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:45:20.0237 INFO Executed action NotesApp.Controllers.UserController.GetAll (NotesApp) in 11.6492ms
+2023-11-30 12:45:20.0237 INFO Executed endpoint 'NotesApp.Controllers.UserController.GetAll (NotesApp)'
+2023-11-30 12:45:20.0237 DEBUG 'NotesDBContext' disposed.
+2023-11-30 12:45:20.0237 INFO Request finished in 17.6783ms 200 application/json; charset=utf-8

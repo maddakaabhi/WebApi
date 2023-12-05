@@ -22,5 +22,7 @@ namespace BusinessLayer.Interfaces
         UserEntity LoginSession(LoginModel loginModel);
 
         ProductEntity ProductAdd(ProductAddModel productaddmodel);
+
+        UserEntity Updatefirstname(string firstname, string email);
     }
 }

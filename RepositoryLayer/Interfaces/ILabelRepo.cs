@@ -7,7 +7,7 @@ namespace RepositoryLayer.Interfaces
     public interface ILabelRepo
     {
         LabelEntity AddLabel(LabelModel labelModel, int Userid);
-        List<LabelEntity> GetLabels(int Userid);
+        List<LabelEntity> GetLabels(int Userid, int noteid);
 
         LabelEntity UpdateLabel(LabelModel labelModel,int Labelid, int Userid);
   
